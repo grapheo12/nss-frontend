@@ -31,13 +31,13 @@ import {BrowserRouter,Route,Link} from 'react-router-dom';
                   <a className="nav-link" href="javascript: document.body.scrollIntoView(false);">Contact Us</a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Notifications">Notifications</Link>
-                </li>
-                <li className="nav-item">
                   <Link className="nav-link" to="/Blog">Our Activities</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Submit">Report (Internal)</Link>
+                  <Link className="nav-link" to="/Notifications">Notifications</Link>
+                </li>
+               <li className="nav-item">
+                  <Link className="nav-link" to="/Submit">Internal Links</Link>
                 </li>
               </ul>
             </div>
