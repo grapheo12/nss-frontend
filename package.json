@@ -6,19 +6,22 @@
     "@mkoelewijn/scrollanimate": "^1.0.2",
     "@tweenjs/tween.js": "^18.1.2",
     "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
     "bezier-js": "^2.4.3",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-light-accordion": "^0.1.4",
+    "react-preloaders": "^3.0.3",
     "react-reveal": "^1.2.2",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.1",
     "react-transition-group": "^4.2.2",
     "scrollmagic": "^2.0.7",
-    "tween.js": "^16.6.0"
+    "tween.js": "^16.6.0",
+    "webpack": "^4.39.1"
   },
   "scripts": {
     "start": "react-scripts start",
