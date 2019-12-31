@@ -9,6 +9,7 @@ import Notifications from './Components/Notifications'
 import Blog from './Components/Blog'
 import Reporter from './Components/Reporter'
 import {BrowserRouter, Route} from 'react-router-dom';
+import {Lines,Sugar} from 'react-preloaders';
 
 
 class App extends Component{
@@ -28,7 +29,9 @@ class App extends Component{
                                                 <Route path="/Submit" component={Reporter} />
 						<Footer />		    		
 					</div>
+					<Sugar background="#202020" color="white" time="3000"/>
 				</BrowserRouter>
+
 			)
 	}
 }
