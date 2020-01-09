@@ -11,13 +11,13 @@ class Footer extends Component{
             <img className="rounded" style={{height: "160px", margin: "auto"}} src="assets/img/nss-trans.png" alt="Logo" />
           </div>
             <div className="col-12 col-lg-6">
-              <h3>Contact Us</h3>
+              <h3>&nbsp; &nbsp; &nbsp;Contact Us</h3>
               <ul style={{listStyleType: "none"}}>
-                <li>
-                  Professor-in-charge: Prof. Arghya Deb &nbsp; <a href="mailto:arghya@civil.iitkgp.ac.in">[arghya@civil.iitkgp.ac.in]</a>
+                <li className="text-white">
+                  Professor-in-charge: Prof. Arghya Deb <br/> <a href="mailto:arghya@civil.iitkgp.ac.in">[arghya@civil.iitkgp.ac.in]</a>
                 </li>
-                <li>
-                  Site Admin: &nbsp; <a href="mailto:nsskgpsite@gmail.com">[nsskgpsite@gmail.com]</a>
+                <li className="text-white">
+                  Site Admin: <br/> <a href="mailto:nsskgpsite@gmail.com">[nsskgpsite@gmail.com]</a>
                 </li>
               </ul>
             </div>
