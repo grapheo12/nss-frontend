@@ -20,6 +20,7 @@ class Home_container extends Component{
                  today it has got more than 3.2 million student volunteers from all over the country. In IIT-KGP, NSS has been made a part of core academic
                  curriculum for more than one-third of first and second year undergraduate students.
                  The programme comprises of weekly field work and a minimum of one annual camp.</p>
+	    <p>Read our 2020 newsletter <a target="_blank" href="https://nsskgpapi.herokuapp.com/gstatic/2020_newsletter.pdf">here</a>.</p>
               </div>
             </article>
             <hr />

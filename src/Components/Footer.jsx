@@ -14,8 +14,11 @@ class Footer extends Component{
               <h3>&nbsp; &nbsp; &nbsp;Contact Us</h3>
               <ul style={{listStyleType: "none"}}>
                 <li className="text-white">
-                  Professor-in-charge: Prof. Arghya Deb <br/> <a href="mailto:arghya@civil.iitkgp.ac.in">[arghya@civil.iitkgp.ac.in]</a>
+                  PC: Prof. B.M. Manoj<br/> <a href="mailto:bmmanoj@phy.iitkgp.ac.in">[bmmanoj@phy.iitkgp.ac.in]</a>
                 </li>
+		<li className="text-white">
+		    CPC: Prof. A. Shaw<br /> <a href="mailto:abshaw@civil.iitkgp.ac.in">[abshaw@civil.iitkgp.ac.in]</a>
+		</li>
                 <li className="text-white">
                   Site Admin: <br/> <a href="mailto:nsskgpsite@gmail.com">[nsskgpsite@gmail.com]</a>
                 </li>

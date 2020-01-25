@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import CardGroup from './Card-group';
 import axios from 'axios';
+import { Lines, Sugar } from 'react-preloaders';
 
  class Members extends Component{
      constructor(props){
@@ -22,7 +23,8 @@ import axios from 'axios';
          ];
 
          this.state = {
-             team: team
+             team: team,
+	     preloader: true
          }
      }
 
@@ -38,8 +40,10 @@ import axios from 'axios';
                                   `Github Handle: ${member.handle}`
                               ]
                           }
-                      ))
+                      )),
+			preloader: false
                   })
+
               })
               .catch(err => {
                   console.log(err);
@@ -50,6 +54,8 @@ import axios from 'axios';
      render(){
          return(
          <div>
+            	<Sugar background="#202020" color="white" customLoading={this.state.preloader} />
+
             <CardGroup cards={this.state.team} />            
         </div>
          )

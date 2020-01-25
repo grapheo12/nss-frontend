@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Card from './Cards';
 import axios from 'axios';
+import { Lines, Sugar } from 'react-preloaders';
 
  class Notifs extends Component{
      constructor(props){
@@ -8,7 +9,8 @@ import axios from 'axios';
          this.state = {
              cards: [
                  (<Card header="No notifications" points={[]} />)
-             ]
+             ],
+	     preloader: true
          }
      }
 
@@ -19,8 +21,11 @@ import axios from 'axios';
                       cards: res.data.notifications.reverse().map(card => (
                           <Card header={card.header} points={card.points} />
                       )
-                    )
-                  })
+                    ),
+		      preloader: false
+                  });
+
+
               })
               .catch(err => {
                   console.log(err);
@@ -30,7 +35,9 @@ import axios from 'axios';
      render(){
          return(
          <div class="container" style={{paddingTop: "1rem"}}>
-            {this.state.cards} 
+                 	<Sugar customLoading={this.state.preloader} background="#202020" color="white" />
+
+	     {this.state.cards} 
         </div>
          )
      }

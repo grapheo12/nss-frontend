@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios';
+import { Lines, Sugar } from 'react-preloaders';
 
 class Blog extends Component{
     constructor(props){
@@ -15,7 +16,8 @@ class Blog extends Component{
         ];
 
         this.state = {
-            blogs: blog_list
+            blogs: blog_list,
+	    preloader: true
         }
     }
 
@@ -24,8 +26,10 @@ class Blog extends Component{
              .then((res) => {
                 console.log(res);
                  this.setState({
-                    blogs: res.data.blogs.reverse()
-                })
+                    blogs: res.data.blogs.reverse(),
+		    preloader: false 
+                });
+
              })
              .catch(err => {
                  console.log(err);
@@ -36,6 +40,8 @@ class Blog extends Component{
     render(){
         return (
             <div>
+           	<Sugar customLoading={this.state.preloader} background="#202020" color="white" />
+
                 {this.state.blogs.map((blog) => { return (
                 <div>
                     <main className="main-content bg-gray">

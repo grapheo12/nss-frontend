@@ -3,15 +3,8 @@ import axios from 'axios';
 
 class Header extends Component{
     render(){
-        axios.get("http://127.0.0.1:5000/json/abc.json")
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-        return(
-            <header className="header header-inverse" style={{backgroundImage: "url(assets/img/kgp.jpg)"}} data-overlay={8}>
+       return(
+            <header id="backchange" className="header header-inverse" style={{backgroundImage: `url('assets/img/kgp.jpg')`}} data-overlay={8}>
             <div className="container text-center">
               <div className="row">
                 <div className="col-12 col-lg-8 offset-lg-2">
@@ -23,6 +16,17 @@ class Header extends Component{
           </header>
         )
     }
+
+    componentDidMount(){
+	const urls = ['kgp.jpg', 'car_1.jpeg', 'car_2.jpeg'];
+	var i = 1;
+	
+	setInterval(() => {
+	    document.getElementById("backchange").style.backgroundImage = `url('assets/img/${urls[i]}')`;
+	    i = (i + 1) % 3;
+	}, 5000);
+    }
+
 }
 
 export default Header;
