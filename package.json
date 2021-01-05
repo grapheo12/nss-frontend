@@ -5,7 +5,7 @@
   "dependencies": {
     "@mkoelewijn/scrollanimate": "^1.0.2",
     "@tweenjs/tween.js": "^18.1.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bezier-js": "^2.4.3",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
